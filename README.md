@@ -2,30 +2,75 @@
 This is an open source project of government open data, which is implemented in java , for sake of Exensiability ,Performance and Flexiability ...(instead of ckan)
 
 # API
-## 创建机构
+### 创建机构
 ```
-	../orgnization/create?full_name_cn=武汉大学&full_name_en=WHU&short_name_cn=武大 \
-		&short_name_en=WHU&org_type=Xingzheng&landingPage
+	/orgnization/create
 ```
-##	创建机构间关系
+####	参数
 ```
-	../orgnization/relation/create?src_org_id=1&test_org_id=2&relation_type=ChangedFrom
+	{
+		full_name_cn:string, 	/**/
+		short_name_cn:string,	/**/
+		full_name_en:string,	/**/
+		short_name_en:string,	/**/
+		org_type:string,		/**/
+		landingPage:string		/**/
+		
+
+	}
+```
+###	创建机构间关系
+```
+	/orgnization/relation/create
+```
+####	参数
+```
+	{
+		src_org_id:long,		/**/
+		dest_org_id:long,		/**/
+		relation_type:string	/**/
+	}
+```
+###	删除机构间关系
+```
+	/orgnization/relation/delete
+```
+####	参数
+```
+	{
+		src_org_id:long,		/**/
+		dest_org_id:long,		/**/
+		relation_type:string	/**/
+	}
 ```
 
-##	删除机构间关系
+
+###	创建机构地址
 ```
-	../orgnization/relation/delete?src_org_id=1&test_org_id=2&relation_type=ChangedFrom
+	/orgnization/location/create
+```
+####	参数
+```
+	{
+		org_id:long,			 /**/
+		longitude：double,		/*经度*/
+		latitude:double,		/*纬度*/
+		address:string			/**/
+	}
 ```
 
-
-##	创建机构地址
+###	更新机构地址
 ```
-	../orgnization/location/create?org_id=1&address=湖北省武汉市武昌区武汉大学&longitude=110.2&latitude=29.89
+	/orgnization/location/update
 ```
-
-##	更新机构地址
+####	参数
 ```
-	../orgnization/location/update?org_id=1&address=湖北省武汉市武昌区武汉大学&longitude=110.2&latitude=29.89
+	{
+		org_id:long,			 /**/
+		longitude：double,		/*经度*/
+		latitude:double,		/*纬度*/
+		address:string			/**/
+	}
 ```
 
 ## 机构搜粟
@@ -121,3 +166,62 @@ This is an open source project of government open data, which is implemented in 
 		step_limit:int /*关系路径最大长度*/
 	}
 ```
+
+##	Subject Word API
+###
+```
+	/subjectword/create
+```
+#### 参数
+```
+	{
+		uri:string,
+		name:string
+	}
+```
+###	
+```
+	/subjectword/update
+```
+####	参数
+```
+	{
+		subject_word_id:string
+	}
+```
+###	
+```
+	/subjectword/delete
+```
+####	参数
+```
+	{
+		subject_word_id:string
+	}
+```
+###	
+```
+	/subjectword/relation/create
+```
+####	参数
+```
+	{
+		src_subject_word_id:long,		/**/
+		dest_subject_word_id:long,		/**/
+		relation_type:string			/**/
+	}
+```	
+###	
+```
+	/subjectword/relation/delete
+```
+####	参数
+```
+	{
+		src_subject_word_id:long,		/**/
+		dest_subject_word_id:long,		/**/
+		relation_type:string			/**/
+	}
+	
+```
+###	
