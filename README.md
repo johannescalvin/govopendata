@@ -224,4 +224,76 @@ This is an open source project of government open data, which is implemented in 
 	}
 	
 ```
+## Subject Word Search API
 ###	
+```
+	/subjectword/search/getById
+```
+####	参数
+```
+	{
+		subject_word_id : long
+	}
+```
+###
+```
+	/subjectword/search/searchByLiteral
+```
+####	参数
+```
+	{
+		word_literal:string
+	}
+```
+###	
+```
+	/dataset/search/getById
+```
+####	参数
+```
+	{
+		
+	}
+```
+###	
+```
+	/dataset/search/searchByName
+```
+####	参数
+```
+	{
+		
+	}
+```
+###	
+```
+	/dataset/search/searchBySubjectWords
+```
+####	参数
+```
+	{
+		
+	}
+```
+
+###	
+```
+	/dataset/search/searchByKeyWords
+```
+####	参数
+```
+	{
+		
+	}
+```
+###	
+```
+	/dataset/search/searchByDescription
+```
+####	参数
+```
+	{
+		
+	}
+```
+
