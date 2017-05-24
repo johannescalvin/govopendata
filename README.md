@@ -30,14 +30,94 @@ This is an open source project of government open data, which is implemented in 
 
 ## 机构搜粟
 
-##	根据ID获取机构
+###	根据ID获取机构
 ```
 	/orgnization/search/getbyid
 ```
-###	参数
+####	参数
 ```javascript
 	{
-		org_id：int
+		org_id：long
 	}
 	
+```
+
+###	根据名称*精确*获取机构
+```
+	/orgnization/search/getByName
+```
+####	参数
+```javascript
+	{
+		name：string
+	}
+```
+###	根据中文名称*检索*机构
+```
+	/orgnization/search/searchByCnName
+```
+####	参数
+```javascript
+	{
+		name_cn：string
+	}
+```
+
+###	根据英文名称*检索*机构
+```
+	/orgnization/search/searchByCnName
+```
+####	参数
+```javascript
+	{
+		name_en：string
+	}
+```
+
+###	根据*所有*名称字段名称*检索*机构
+```
+	/orgnization/search/searchByNames
+```
+####	参数
+```javascript
+	{
+		name：string
+	}
+```
+###	根据经纬度位置检索附近的机构
+```
+	/orgnization/search/searchByLocation
+```
+####	参数
+```javascript
+	{
+		longitude：double,		/*经度*/
+		latitude:double,		/*纬度*/
+		distance:double	/*与经纬度指定位置的最大距离*/
+	}
+```
+
+###	根据地址名称检索机构
+```
+	/orgnization/search/searchByAddress
+```
+####	参数
+```javascript
+	{
+		address:string
+	}
+```
+
+
+###	根据机构间的关系查找相关机构
+```
+	/orgnization/search/searchByLocation
+```
+####	参数
+```javascript
+	{
+		src_org_id：long,/*起始结点*/
+		relation_type:string,/*关系类型名称*/
+		step_limit:int /*关系路径最大长度*/
+	}
 ```

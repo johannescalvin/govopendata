@@ -20,25 +20,31 @@ public class OrgSearchController {
 	
 	@RequestMapping("/getByName")
 	@ResponseBody
-	public PageBar<Orgnization> getByName(@RequestParam(name="name",required=true) Long cnName){
+	public PageBar<Orgnization> getByName(@RequestParam(name="name",required=true) String cnName){
 		return  new PageBar<Orgnization>();
 	}
 	
 	@RequestMapping("/searchByCnName")
 	@ResponseBody
-	public PageBar<Orgnization> searchByCnName(@RequestParam(name="name_cn",required=true) Long cnName){
+	public PageBar<Orgnization> searchByCnName(@RequestParam(name="name_cn",required=true) String cnName){
 		return  new PageBar<Orgnization>();
 	}
 	
 	@RequestMapping("/searchByEnName")
 	@ResponseBody
-	public PageBar<Orgnization> searchByEnName(@RequestParam(name="name_cn",required=true) Long cnName){
+	public PageBar<Orgnization> searchByEnName(@RequestParam(name="name_en",required=true) String enName){
 		return  new PageBar<Orgnization>();
 	}
 
 	@RequestMapping("/searchByNames")
 	@ResponseBody
-	public PageBar<Orgnization> searchByNames(@RequestParam(name="name",required=true) Long cnName){
+	public PageBar<Orgnization> searchByNames(@RequestParam(name="name",required=true) String cnName){
+		return  new PageBar<Orgnization>();
+	}
+	
+	@RequestMapping("/searchByAddress")
+	@ResponseBody
+	public PageBar<Orgnization> searchAddress(@RequestParam(name="address",required=true) String address){
 		return  new PageBar<Orgnization>();
 	}
 	
@@ -49,7 +55,7 @@ public class OrgSearchController {
 	public PageBar<Orgnization> searchByNames(
 			@RequestParam(name="longitude",required=true)  Double longitude,	//经度
 			@RequestParam(name="latitude",required=true) Double latitude,	//纬度
-			@RequestParam(name="longitude",required=true)  Double distance	// 距离范围
+			@RequestParam(name="distance",required=true)  Double distance	// 距离范围
 	
 			){
 		return  new PageBar<Orgnization>();
