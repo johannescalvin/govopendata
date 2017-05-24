@@ -18,19 +18,19 @@ This is an open source project of government open data, which is implemented in 
 ```
 
 
-##创建机构地址
+##	创建机构地址
 ```
 	../orgnization/location/create?org_id=1&address=湖北省武汉市武昌区武汉大学&longitude=110.2&latitude=29.89
 ```
 
-##更新机构地址
+##	更新机构地址
 ```
 	../orgnization/location/update?org_id=1&address=湖北省武汉市武昌区武汉大学&longitude=110.2&latitude=29.89
 ```
 
 ## 机构搜粟
 
-##根据ID获取机构
+##	根据ID获取机构
 ```
 	/orgnization/search/getbyid
 ```
