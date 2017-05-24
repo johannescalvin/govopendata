@@ -35,7 +35,7 @@ This is an open source project of government open data, which is implemented in 
 	/orgnization/search/getbyid
 ```
 ###	参数
-```json
+```javascript
 	{
 		org_id：int
 	}
