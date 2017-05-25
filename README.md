@@ -168,7 +168,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 
 ##	Subject Word API
-###
+### 创建主题词
 ```
 	/subjectword/create
 ```
@@ -179,7 +179,7 @@ This is an open source project of government open data, which is implemented in 
 		name:string
 	}
 ```
-###	
+### 更新主题词的属性
 ```
 	/subjectword/update
 ```
@@ -189,7 +189,7 @@ This is an open source project of government open data, which is implemented in 
 		subject_word_id:long
 	}
 ```
-###	
+###	删除主题词 （慎用）
 ```
 	/subjectword/delete
 ```
@@ -199,7 +199,7 @@ This is an open source project of government open data, which is implemented in 
 		subject_word_id:string
 	}
 ```
-###	
+###	创建词间关系
 ```
 	/subjectword/relation/create
 ```
@@ -211,7 +211,7 @@ This is an open source project of government open data, which is implemented in 
 		relation_type:string			/**/
 	}
 ```	
-###	
+###	删除词间关系
 ```
 	/subjectword/relation/delete
 ```
@@ -224,8 +224,13 @@ This is an open source project of government open data, which is implemented in 
 	}
 	
 ```
+### 获得词间关系列表
+```
+	/subjectword/relationtypelist
+```
+### 无参数 只能使用*GET*方法
 ## Subject Word Search API
-###	
+###	根据ID直接获取主题词
 ```
 	/subjectword/search/getById
 ```
@@ -235,7 +240,18 @@ This is an open source project of government open data, which is implemented in 
 		subject_word_id : long
 	}
 ```
-###
+###	根据指定平台的URI获取主题词
+```
+	/subjectword/search/getByURI
+```
+####	参数
+```
+	{
+		platform : string,
+		uri:string
+	}
+```
+### 根据字面值检索主题词
 ```
 	/subjectword/search/searchByLiteral
 ```
@@ -245,7 +261,33 @@ This is an open source project of government open data, which is implemented in 
 		word_literal:string
 	}
 ```
-###	
+### 根据词间关系进行检索
+```
+	/subjectword/search/searchBySubjectwordRelation
+```
+####	参数
+```
+	{
+		src_subject_word_id:long,		/*主题词ID*/
+		subject_word_relation:string,	/*词间关系类型*/
+		steps_limit:int,					/*关系路径最大长度*/
+		intermediate result_included:boolean	/*是否包含中间结果*/
+	}
+```
+### 按照词间关系路径进行搜索
+```
+	/subjectword/search/searchByRelationPath
+```
+```
+	{
+		src_subject_word_id:long,		/*主题词ID*/
+		intermediate result_included:boolean	/*是否包含中间结果*/
+		...
+	}
+```
+
+## Data Set Search API
+###	根据ID获得数据集
 ```
 	/dataset/search/getById
 ```
@@ -255,7 +297,7 @@ This is an open source project of government open data, which is implemented in 
 		
 	}
 ```
-###	
+###	根据数据集名称进行检索
 ```
 	/dataset/search/searchByName
 ```
@@ -265,7 +307,7 @@ This is an open source project of government open data, which is implemented in 
 		
 	}
 ```
-###	
+###	根据主题词语
 ```
 	/dataset/search/searchBySubjectWords
 ```
@@ -276,7 +318,7 @@ This is an open source project of government open data, which is implemented in 
 	}
 ```
 
-###	
+###	根据关键词检索
 ```
 	/dataset/search/searchByKeyWords
 ```
@@ -286,7 +328,7 @@ This is an open source project of government open data, which is implemented in 
 		
 	}
 ```
-###	
+###	根据数据集描述检索
 ```
 	/dataset/search/searchByDescription
 ```
@@ -297,7 +339,7 @@ This is an open source project of government open data, which is implemented in 
 	}
 ```
 
-###	
+### 根据出版者检索	
 ```
 	/dataset/search/searchByPublisher
 ```
