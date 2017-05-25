@@ -3,6 +3,7 @@ package govopendata.thesaurus.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import govopendata.thesaurus.entity.SubjectWordRelation;
 import govopendata.utils.ResultStatus;
@@ -11,6 +12,7 @@ import govopendata.utils.ResultStatus;
 @RequestMapping("/subjectword/relation")
 public class SubjectwordRelationController {
 	@RequestMapping("/create")
+	@ResponseBody
 	public ResultStatus create(
 			@RequestParam(name="src_subject_word_id",required=true) Long srcSubjectWordId,
 			@RequestParam(name="dest_subject_word_id",required=true) long destSubjectWordId,
@@ -18,8 +20,11 @@ public class SubjectwordRelationController {
 		return new ResultStatus();
 	}
 	
-	@RequestMapping("/create")
-	public ResultStatus delete(){
+	@RequestMapping("/delete")
+	@ResponseBody
+	public ResultStatus delete(
+			@RequestParam(name="org_id",required=true) long subject_word_id
+			){
 		return new ResultStatus();
 	}
 }

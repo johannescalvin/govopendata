@@ -13,7 +13,7 @@ public class SubjectwordController {
 		return new ResultStatus();
 	}
 	
-	@RequestMapping("/delete")
+	@RequestMapping("/update")
 	public ResultStatus update(){
 		return new ResultStatus();
 	}

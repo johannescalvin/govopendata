@@ -186,7 +186,7 @@ This is an open source project of government open data, which is implemented in 
 ####	参数
 ```
 	{
-		subject_word_id:string
+		subject_word_id:long
 	}
 ```
 ###	
@@ -297,3 +297,12 @@ This is an open source project of government open data, which is implemented in 
 	}
 ```
 
+###	
+```
+	/dataset/search/searchByPublisher
+```
+####	参数
+```
+	{
+		
+	}

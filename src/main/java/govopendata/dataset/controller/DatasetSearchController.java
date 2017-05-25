@@ -39,6 +39,11 @@ public class DatasetSearchController {
 	public PageBar<Object> searchByDescription(){
 		return new PageBar<Object>();
 	}
-
+	@RequestMapping("/searchByPublisher")
+	@ResponseBody
+	public PageBar<Object> searchByPublisher(){
+		return new PageBar<Object>();
+	}
+	
 	
 }
