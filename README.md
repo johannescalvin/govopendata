@@ -478,3 +478,44 @@ This is an open source project of government open data, which is implemented in 
 	}
 ```
 
+##	辅助发现 API
+### 获取最热主题词
+```
+	/usage/subjectword/hotest
+```
+### 获取最热关键词
+```
+	/usage/keyword/hotest
+```
+###	获取书籍集出版机构
+```
+	/usage/publisher/hotest
+```
+### 最热检索式
+```
+	/usage/searchquery/hotest
+```
+### 检索式自动提示
+```
+	/autosuggest/query
+```
+####	参数
+```
+	{
+		search_query:string
+	}
+```
+###	组织机构自动提示
+```
+	/autosuggest/orgnization
+```
+####	参数
+```
+	{
+		org_name:string	/*机构名称*/
+	}
+```
+
+
+
+
