@@ -307,7 +307,7 @@ This is an open source project of government open data, which is implemented in 
 		dataset_name:string		/*数据集名称*/
 	}
 ```
-###	根据主题词语
+###	根据主题词检索
 ```
 	/dataset/search/searchBySubjectWords
 ```
@@ -348,3 +348,133 @@ This is an open source project of government open data, which is implemented in 
 	{
 		dataset_publisher_name:string		/**出版者名称*/
 	}
+
+
+##	数据集浏览
+###	根据数据ID浏览
+```
+	/dataset/view/byId
+```
+####	参数
+```
+	{
+		dataset_id:long
+	}
+```
+###	根据出版者ID进行浏览
+```
+	/dataset/view/byPublisherId
+```
+####	参数
+```
+	{
+		dataset_publisher_id:long
+	}
+```
+###	根据出版者名称进行浏览
+```
+	/dataset/view/byPublisherName
+```
+####	参数
+```
+	{
+		dataset_publisher_Name:string
+	}
+```
+###	根据出版者类型进行浏览
+```
+	/dataset/view/byPublisherType
+```
+####	参数
+```
+	{
+		dataset_publisher_type:string	/*数据集出版机构类型*/
+	}
+```
+###	根据主题词ID进行浏览
+```
+	/dataset/view/bySubjectWordId
+```
+####	参数
+```
+	{
+		dataset_subject_word_id:long
+	}
+```
+###	根据主题词URI进行浏览
+```
+	/dataset/view/byPublisherId	/*主题词ID*/
+```
+####	参数
+```
+	{
+		dataset_subject_word_uri:string	/*主题词URI*/
+	}	
+```
+###	根据主题词字面值进行浏览
+```
+	/dataset/view/bySubjectWordLiteral
+```
+####	参数
+```
+	{
+		dataset_subject_word_literal:string
+	}
+```
+###	根据关键词字面值进行浏览
+```
+	/dataset/view/byKeywordLiteral
+```
+####	参数
+```
+	{
+		dataset_keyword_literal:string /*关键词字面值*/
+	}
+```
+###	根据数据集标题进行浏览
+```
+	/dataset/view/byTitle
+```
+####	参数
+```
+	{
+		dataset_title:string	/*数据集标题*/
+	}
+```
+###	根据数据集主题分类进行浏览
+```
+	/dataset/view/byCategory
+```
+####	参数
+```
+	{
+		dataset_category:string	/*数据集主题分类*/
+	}
+```
+###	根据数据集发布者的区位进行浏览
+```
+	/dataset/view/byPublisherLocation
+```
+####	参数
+```
+	{
+		dataset_publisher_location: {
+			province:string,
+			city:string,
+			county:string,
+			town:string
+		}
+	}
+```
+###	根据数据集发布者的地址范围进行浏览
+```
+	/dataset/view/byPublisherAddress
+```
+####	参数
+```
+	{
+		dataset_publisher_address: string,	/**地址信息*/
+		distance_limit:double					/*最大距离限制*/
+	}
+```
+
