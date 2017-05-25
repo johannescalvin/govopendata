@@ -487,7 +487,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 	/usage/keyword/hotest
 ```
-###	获取书籍集出版机构
+###	最热数据集出版机构
 ```
 	/usage/publisher/hotest
 ```
