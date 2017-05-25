@@ -348,7 +348,7 @@ This is an open source project of government open data, which is implemented in 
 	{
 		dataset_publisher_name:string		/**出版者名称*/
 	}
-
+```
 
 ##	数据集浏览
 ###	根据数据ID浏览
