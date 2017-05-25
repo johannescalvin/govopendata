@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>创建数据集页面</title>
 </head>
 <body>
+<jsp:include page="../header.jsp" flush="true"/>
 
+<div id="div-main"></div>
+
+<jsp:include page="../footer.jsp" flush="true"/>
 </body>
 </html>

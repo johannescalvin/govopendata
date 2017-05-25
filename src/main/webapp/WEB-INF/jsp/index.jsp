@@ -7,7 +7,11 @@
 <title>数据开放平台-示例</title>
 </head>
 <body>
+<jsp:include page="header.jsp" flush="true"/>
+
 <h1>啥都没有！ 因为，因为懒得写前端....</h1>
 
+<jsp:include page="footer.jsp" flush="true"/>
 </body>
+
 </html>

@@ -7,6 +7,10 @@
 <title>数据集检索结果页面</title>
 </head>
 <body>
-	<h2>Nothing to write!</h2>
+<jsp:include page="../header.jsp" flush="true"/>
+
+<div id="div-main"></div>
+
+<jsp:include page="../footer.jsp" flush="true"/>
 </body>
 </html>

@@ -7,6 +7,10 @@
 <title>机构用户中心</title>
 </head>
 <body>
+<jsp:include page="../header.jsp" flush="true"/>
 
+<div id="div-main"></div>
+
+<jsp:include page="../footer.jsp" flush="true"/>
 </body>
 </html>

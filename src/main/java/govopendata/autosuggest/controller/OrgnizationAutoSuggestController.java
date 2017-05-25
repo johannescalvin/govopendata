@@ -10,7 +10,7 @@ import govopendata.orgnization.entity.Orgnization;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/autosuggest/orgnization")
+@RequestMapping("/api/autosuggest/orgnization")
 public class OrgnizationAutoSuggestController {
 	@RequestMapping(method=RequestMethod.GET)
 	@ResponseBody
