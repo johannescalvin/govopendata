@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import govopendata.utils.ResultStatus;
 
 @Controller
-@RequestMapping("/dataset")
+@RequestMapping("/api/dataset")
 public class DatasetController {
 	@RequestMapping("/upload")
 	public ResultStatus create(){

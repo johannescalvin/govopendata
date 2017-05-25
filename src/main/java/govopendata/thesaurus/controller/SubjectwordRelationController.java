@@ -9,7 +9,7 @@ import govopendata.thesaurus.entity.SubjectWordRelation;
 import govopendata.utils.ResultStatus;
 
 @Controller
-@RequestMapping("/subjectword/relation")
+@RequestMapping("/api/subjectword/relation")
 public class SubjectwordRelationController {
 	@RequestMapping("/create")
 	@ResponseBody

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import govopendata.utils.ResultStatus;
 
 @Controller
-@RequestMapping("/subjectword")
+@RequestMapping("/api/subjectword")
 public class SubjectwordController {
 	@RequestMapping("/create")
 	public ResultStatus create(){

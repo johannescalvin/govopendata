@@ -4,7 +4,7 @@ This is an open source project of government open data, which is implemented in 
 # API
 ### 创建机构
 ```
-	/orgnization/create
+	/api/orgnization/create
 ```
 ####	参数
 ```
@@ -21,7 +21,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	创建机构间关系
 ```
-	/orgnization/relation/create
+	/api/orgnization/relation/create
 ```
 ####	参数
 ```
@@ -33,7 +33,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	删除机构间关系
 ```
-	/orgnization/relation/delete
+	/api/orgnization/relation/delete
 ```
 ####	参数
 ```
@@ -47,7 +47,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	创建机构地址
 ```
-	/orgnization/location/create
+	/api/orgnization/location/create
 ```
 ####	参数
 ```
@@ -61,7 +61,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	更新机构地址
 ```
-	/orgnization/location/update
+	/api/orgnization/location/update
 ```
 ####	参数
 ```
@@ -77,7 +77,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	根据ID获取机构
 ```
-	/orgnization/search/getbyid
+	/api/orgnization/search/getbyid
 ```
 ####	参数
 ```javascript
@@ -89,7 +89,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	根据名称*精确*获取机构
 ```
-	/orgnization/search/getByName
+	/api/orgnization/search/getByName
 ```
 ####	参数
 ```javascript
@@ -99,7 +99,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据中文名称*检索*机构
 ```
-	/orgnization/search/searchByCnName
+	/api/orgnization/search/searchByCnName
 ```
 ####	参数
 ```javascript
@@ -110,7 +110,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	根据英文名称*检索*机构
 ```
-	/orgnization/search/searchByCnName
+	/api/orgnization/search/searchByCnName
 ```
 ####	参数
 ```javascript
@@ -121,7 +121,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	根据*所有*名称字段名称*检索*机构
 ```
-	/orgnization/search/searchByNames
+	/api/orgnization/search/searchByNames
 ```
 ####	参数
 ```javascript
@@ -144,7 +144,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	根据地址名称检索机构
 ```
-	/orgnization/search/searchByAddress
+	/api/orgnization/search/searchByAddress
 ```
 ####	参数
 ```javascript
@@ -156,7 +156,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	根据机构间的关系查找相关机构
 ```
-	/orgnization/search/searchByLocation
+	/api/orgnization/search/searchByLocation
 ```
 ####	参数
 ```javascript
@@ -170,7 +170,7 @@ This is an open source project of government open data, which is implemented in 
 ##	Subject Word API
 ### 创建主题词
 ```
-	/subjectword/create
+	/api/subjectword/create
 ```
 #### 参数
 ```
@@ -181,7 +181,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ### 更新主题词的属性
 ```
-	/subjectword/update
+	/api/subjectword/update
 ```
 ####	参数
 ```
@@ -191,7 +191,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	删除主题词 （慎用）
 ```
-	/subjectword/delete
+	/api/subjectword/delete
 ```
 ####	参数
 ```
@@ -201,7 +201,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	创建词间关系
 ```
-	/subjectword/relation/create
+	/api/subjectword/relation/create
 ```
 ####	参数
 ```
@@ -213,7 +213,7 @@ This is an open source project of government open data, which is implemented in 
 ```	
 ###	删除词间关系
 ```
-	/subjectword/relation/delete
+	/api/subjectword/relation/delete
 ```
 ####	参数
 ```
@@ -226,13 +226,13 @@ This is an open source project of government open data, which is implemented in 
 ```
 ### 获得词间关系列表
 ```
-	/subjectword/relationtypelist
+	/api/subjectword/relationtypelist
 ```
 ### 无参数 只能使用*GET*方法
 ## Subject Word Search API
 ###	根据ID直接获取主题词
 ```
-	/subjectword/search/getById
+	/api/subjectword/search/getById
 ```
 ####	参数
 ```
@@ -253,7 +253,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ### 根据字面值检索主题词
 ```
-	/subjectword/search/searchByLiteral
+	/api/subjectword/search/searchByLiteral
 ```
 ####	参数
 ```
@@ -276,7 +276,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ### 按照词间关系路径进行搜索
 ```
-	/subjectword/search/searchByRelationPath
+	/api/subjectword/search/searchByRelationPath
 ```
 ```
 	{
@@ -289,7 +289,7 @@ This is an open source project of government open data, which is implemented in 
 ## Data Set Search API
 ###	根据ID获得数据集
 ```
-	/dataset/search/getById
+	/api/dataset/search/getById
 ```
 ####	参数
 ```
@@ -299,7 +299,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据数据集名称进行检索
 ```
-	/dataset/search/searchByName
+	/api/dataset/search/searchByName
 ```
 ####	参数
 ```
@@ -309,7 +309,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据主题词检索
 ```
-	/dataset/search/searchBySubjectWords
+	/api/dataset/search/searchBySubjectWords
 ```
 ####	参数
 ```
@@ -320,7 +320,7 @@ This is an open source project of government open data, which is implemented in 
 
 ###	根据关键词检索
 ```
-	/dataset/search/searchByKeyWords
+	/api/dataset/search/searchByKeyWords
 ```
 ####	参数
 ```
@@ -330,7 +330,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据数据集描述检索
 ```
-	/dataset/search/searchByDescription
+	/api/dataset/search/searchByDescription
 ```
 ####	参数
 ```
@@ -341,7 +341,7 @@ This is an open source project of government open data, which is implemented in 
 
 ### 根据出版者名称检索	
 ```
-	/dataset/search/searchByPublisherName
+	/api/dataset/search/searchByPublisherName
 ```
 ####	参数
 ```
@@ -353,7 +353,7 @@ This is an open source project of government open data, which is implemented in 
 ##	数据集浏览
 ###	根据数据ID浏览
 ```
-	/dataset/view/byId
+	/api/dataset/view/byId
 ```
 ####	参数
 ```
@@ -363,7 +363,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据出版者ID进行浏览
 ```
-	/dataset/view/byPublisherId
+	/api/dataset/view/byPublisherId
 ```
 ####	参数
 ```
@@ -373,7 +373,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据出版者名称进行浏览
 ```
-	/dataset/view/byPublisherName
+	/api/dataset/view/byPublisherName
 ```
 ####	参数
 ```
@@ -383,7 +383,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据出版者类型进行浏览
 ```
-	/dataset/view/byPublisherType
+	/api/dataset/view/byPublisherType
 ```
 ####	参数
 ```
@@ -393,7 +393,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据主题词ID进行浏览
 ```
-	/dataset/view/bySubjectWordId
+	/api/dataset/view/bySubjectWordId
 ```
 ####	参数
 ```
@@ -403,7 +403,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据主题词URI进行浏览
 ```
-	/dataset/view/byPublisherId	/*主题词ID*/
+	/api/dataset/view/byPublisherId	/*主题词ID*/
 ```
 ####	参数
 ```
@@ -413,7 +413,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据主题词字面值进行浏览
 ```
-	/dataset/view/bySubjectWordLiteral
+	/api/dataset/view/bySubjectWordLiteral
 ```
 ####	参数
 ```
@@ -423,7 +423,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据关键词字面值进行浏览
 ```
-	/dataset/view/byKeywordLiteral
+	/api/dataset/view/byKeywordLiteral
 ```
 ####	参数
 ```
@@ -433,7 +433,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据数据集标题进行浏览
 ```
-	/dataset/view/byTitle
+	/api/dataset/view/byTitle
 ```
 ####	参数
 ```
@@ -443,7 +443,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据数据集主题分类进行浏览
 ```
-	/dataset/view/byCategory
+	/api/dataset/view/byCategory
 ```
 ####	参数
 ```
@@ -453,7 +453,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据数据集发布者的区位进行浏览
 ```
-	/dataset/view/byPublisherLocation
+	/api/dataset/view/byPublisherLocation
 ```
 ####	参数
 ```
@@ -468,7 +468,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	根据数据集发布者的地址范围进行浏览
 ```
-	/dataset/view/byPublisherAddress
+	/api/dataset/view/byPublisherAddress
 ```
 ####	参数
 ```
@@ -481,23 +481,23 @@ This is an open source project of government open data, which is implemented in 
 ##	辅助发现 API
 ### 获取最热主题词
 ```
-	/usage/subjectword/hotest
+	/api/usage/subjectword/hotest
 ```
 ### 获取最热关键词
 ```
-	/usage/keyword/hotest
+	/api/usage/keyword/hotest
 ```
 ###	最热数据集出版机构
 ```
-	/usage/publisher/hotest
+	/api/usage/publisher/hotest
 ```
 ### 最热检索式
 ```
-	/usage/searchquery/hotest
+	/api/usage/searchquery/hotest
 ```
 ### 检索式自动提示
 ```
-	/autosuggest/query
+	/api/autosuggest/query
 ```
 ####	参数
 ```
@@ -507,7 +507,7 @@ This is an open source project of government open data, which is implemented in 
 ```
 ###	组织机构自动提示
 ```
-	/autosuggest/orgnization
+	/api/autosuggest/orgnization
 ```
 ####	参数
 ```
@@ -515,7 +515,44 @@ This is an open source project of government open data, which is implemented in 
 		org_name:string	/*机构名称*/
 	}
 ```
+#	Site Map
+##	首页
+```
+```
+##	数据集
+### 创建页面
+```
+	/dataset/create
+```
+### 展示页面
+```
+	/dataset/display
+```
+### 检索界面
+```
+	/dataset/searchpage
+```
+	
+### 检索结果展示页面
+```
+	/dataset/searchresult/display
+```
 
+## 主题词
+### 展示页面
+```
+	/subject/display
+```
+
+##	机构
+### 展示页面
+```
+	/orgnization/display
+```
+### 操作中心
+```
+	/orgnization/center
+```
 
 
 

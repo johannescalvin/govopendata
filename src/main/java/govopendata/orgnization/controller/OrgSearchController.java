@@ -10,7 +10,7 @@ import govopendata.orgnization.entity.Orgnization;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/orgnization/search")
+@RequestMapping("/api/orgnization/search")
 public class OrgSearchController {
 	@RequestMapping("/getbyid")
 	@ResponseBody

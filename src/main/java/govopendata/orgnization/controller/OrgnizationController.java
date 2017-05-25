@@ -14,7 +14,7 @@ import govopendata.orgnization.entity.OrgType;
 import govopendata.orgnization.service.OrgnizationBasicInfoService;
 
 @Controller
-@RequestMapping("/orgnization")
+@RequestMapping("/api/orgnization")
 public class OrgnizationController {
 	@Resource
 	OrgnizationBasicInfoService orgnizationBasicInfoService;

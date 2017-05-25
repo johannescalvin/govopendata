@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/orgnization/orgtype")
+@RequestMapping("/api/orgnization/orgtype")
 public class OrgTypeController {
 	@RequestMapping("/typelist")
 	@ResponseBody

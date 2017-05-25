@@ -9,7 +9,7 @@ import govopendata.thesaurus.entity.SubjectWord;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/usage/subjectword")
+@RequestMapping("/api/usage/subjectword")
 public class HotSubjectwordController {
 	//获取最热主题词
 	@RequestMapping(value="/hotest",method=RequestMethod.GET)

@@ -10,7 +10,7 @@ import govopendata.thesaurus.entity.SubjectWordRelation;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/subjectword/search")
+@RequestMapping("/api/subjectword/search")
 public class SubjectwordSearchController<SubjectWord> {
 	@ResponseBody
 	@RequestMapping("/getById")

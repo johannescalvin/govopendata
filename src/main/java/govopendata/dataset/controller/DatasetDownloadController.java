@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/dataset/download/")
+@RequestMapping("/api/dataset/download/")
 public class DatasetDownloadController {
 	
 }

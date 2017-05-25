@@ -8,7 +8,7 @@ import govopendata.orgnization.entity.Orgnization;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/usage/publisher")
+@RequestMapping("/api/usage/publisher")
 public class HotPublishController {
 	//获取最热出版机构
 	@RequestMapping(value="/hotest",method=RequestMethod.GET)

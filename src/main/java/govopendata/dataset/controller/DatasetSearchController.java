@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/dataset/search")
+@RequestMapping("/api/dataset/search")
 public class DatasetSearchController {
 	@RequestMapping("/getById")
 	@ResponseBody

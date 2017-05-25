@@ -16,7 +16,7 @@ import govopendata.orgnization.entity.OrgRelationType;
 import govopendata.orgnization.service.OrgRelationService;
 
 @Controller
-@RequestMapping("/orgnization/relation")
+@RequestMapping("/api/orgnization/relation")
 public class OrgRelationController {
 	@Resource
 	OrgRelationService orgRelationService;

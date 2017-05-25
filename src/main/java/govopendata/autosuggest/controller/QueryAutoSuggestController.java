@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/autosuggest/query")
+@RequestMapping("/api/autosuggest/query")
 public class QueryAutoSuggestController {
 	// 用户检索时的动态查询提示
 	@RequestMapping(method=RequestMethod.GET)

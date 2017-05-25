@@ -10,7 +10,7 @@ import govopendata.orgnization.entity.OrgType;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/dataset/view")
+@RequestMapping("/api/dataset/view")
 public class DatasetViewController {
 	//按数据集ID
 	@RequestMapping("/byId")

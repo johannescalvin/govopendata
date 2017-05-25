@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import govopendata.utils.ResultStatus;
 
 @Controller
-@RequestMapping("/orgnization/location")
+@RequestMapping("/api/orgnization/location")
 public class OrgLocationController {
 	@RequestMapping("/create")
 	@ResponseBody

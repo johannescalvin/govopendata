@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import govopendata.utils.PageBar;
 
 @Controller
-@RequestMapping("/usage/keyword")
+@RequestMapping("/api/usage/keyword")
 public class HotKeywordController {
 	//获取最热关键词
 	@RequestMapping("/hotest")
