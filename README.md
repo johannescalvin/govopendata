@@ -294,7 +294,7 @@ This is an open source project of government open data, which is implemented in 
 ####	参数
 ```
 	{
-		
+		dataset_id:long	/**数据集ID*/
 	}
 ```
 ###	根据数据集名称进行检索
@@ -304,7 +304,7 @@ This is an open source project of government open data, which is implemented in 
 ####	参数
 ```
 	{
-		
+		dataset_name:string		/*数据集名称*/
 	}
 ```
 ###	根据主题词语
@@ -314,7 +314,7 @@ This is an open source project of government open data, which is implemented in 
 ####	参数
 ```
 	{
-		
+		dataset_subject_words:string	/**数据集主题词*/
 	}
 ```
 
@@ -325,7 +325,7 @@ This is an open source project of government open data, which is implemented in 
 ####	参数
 ```
 	{
-		
+		dataset_key_words:string		/*数据集关键词*/
 	}
 ```
 ###	根据数据集描述检索
@@ -335,16 +335,16 @@ This is an open source project of government open data, which is implemented in 
 ####	参数
 ```
 	{
-		
+		dataset_description：string		/*数据集描述*/
 	}
 ```
 
-### 根据出版者检索	
+### 根据出版者名称检索	
 ```
-	/dataset/search/searchByPublisher
+	/dataset/search/searchByPublisherName
 ```
 ####	参数
 ```
 	{
-		
+		dataset_publisher_name:string		/**出版者名称*/
 	}
